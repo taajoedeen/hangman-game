@@ -1,0 +1,38 @@
+/* styles/GameBoard.css */
+
+.game-board-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px;
+  background-color: #ecf0f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+}
+
+.guessed {
+  background-color: #2ecc71;
+}
+
+.correct {
+  background-color: #3498db;
+  color: #fff;
+}

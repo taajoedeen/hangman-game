@@ -1,0 +1,16 @@
+/* styles/Hangman.css */
+
+.hangman-container {
+  width: 200px; /* Set a specific width for the container */
+  max-height: 200px; /* Adjust the maximum height as needed */
+  border: 1px solid #000; /* Add a border around the container */
+  padding: 10px; /* Add padding inside the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.hangman-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
