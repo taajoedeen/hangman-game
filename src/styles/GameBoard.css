@@ -7,7 +7,14 @@
   margin-top: 20px;
 }
 
-.letter {
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.keyboard-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,13 +33,17 @@
     background-color: #3498db;
     color: #fff;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #bdc3c7;
+    border-color: #bdc3c7;
+    color: #fff;
+  }
 }
 
-.guessed {
-  background-color: #2ecc71;
-}
-
-.correct {
-  background-color: #3498db;
-  color: #fff;
+.guesses-left {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #3498db;
 }

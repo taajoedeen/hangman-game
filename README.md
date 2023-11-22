@@ -1,24 +1,27 @@
 # Hangman Game
 
-Welcome to the Hangman game! Test your word-guessing skills and have fun.
+Welcome to the Hangman Game! This simple React application allows you to play the classic hangman word-guessing game.
 
-## Rules of the Game
+## Getting Started
 
-1. You are tasked with guessing a hidden word.
-2. Incorrect guesses will progress the hangman figure.
-3. Try to guess the word before the hangman is complete!
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-## How to Play
+### Prerequisites
 
-1. Enter a letter in the input field and press "Guess" to make a guess.
-2. The game will inform you if the guessed letter is correct or incorrect.
-3. The hangman figure will progress with each incorrect guess.
-4. Win the game by correctly guessing the entire word before reaching the maximum incorrect guesses.
+- Node.js and npm installed on your machine.
 
-## Restarting the Game
+### Installation
 
-Click the "Restart" button to start a new game.
+1. Clone the repository to your local machine:
 
-## Help
+   ```bash
+   git clone https://github.com/taajoedeen/hangman-game.git
 
-If you need assistance, click the "Help" button to view the rules of the game.
+   ```
+
+2. Navigate to hangman-game.
+
+3. npm start
+   to run the game
+
+!!!ENJOY!!!

@@ -5,7 +5,7 @@ import Hangman from "./components/Hangman";
 import GameBoard from "./components/GameBoard";
 import HelpModal from "./components/HelpModal";
 import "./App.css";
-
+//words user has to guess//
 const words = [
   "hangman",
   "react",
@@ -54,6 +54,24 @@ const App = () => {
     setHelpModalOpen(false);
   };
 
+  // Function to display the game result message
+  const gameResultMessage = () => {
+    const uniqueWordLetters = new Set(wordToGuess.split(""));
+    const correctUniqueLetters = new Set(correctLetters);
+
+    if (correctUniqueLetters.size === uniqueWordLetters.size) {
+      return <p className="win-message">Congratulations! You won!</p>;
+    } else if (incorrectGuesses >= 6) {
+      return (
+        <p className="loss-message">
+          Sorry! You lost. The word was {wordToGuess}.
+        </p>
+      );
+    } else {
+      return null;
+    }
+  };
+
   return (
     <div className="app-container">
       <h1>Hangman Game</h1>
@@ -62,13 +80,10 @@ const App = () => {
         wordToGuess={wordToGuess}
         guessedLetters={guessedLetters}
         correctLetters={correctLetters}
+        onLetterClick={handleGuess}
+        incorrectGuesses={incorrectGuesses}
       />
-      <p>Guess a letter:</p>
-      <input
-        type="text"
-        maxLength="1"
-        onChange={(e) => handleGuess(e.target.value.toLowerCase())}
-      />
+      {gameResultMessage()}
       <button onClick={restartGame}>Restart</button>
       <button onClick={openHelpModal}>Help</button>
       <HelpModal isOpen={isHelpModalOpen} onClose={closeHelpModal}>
