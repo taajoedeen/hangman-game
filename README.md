@@ -24,4 +24,10 @@ Follow these instructions to get a copy of the project up and running on your lo
 3. npm start
    to run the game
 
+   4.try to guess and dtect what the word is if.
+
+   5.look at the instrutchintions in the help menu if you lost.
+
+   6.I you lose the game the game will tell that you hve last and just select restart button to try again with a different word.
+
 !!!ENJOY!!!
